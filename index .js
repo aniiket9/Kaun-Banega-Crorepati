@@ -38,20 +38,22 @@ function play(question, answer){
   }
   else{
     console.log('maaf kijiye ga ye galat jawaab hai!')
-    console.log("aaj aap jo dhanrashi ghar  le kar jaa rhe hai vo hai : ", dhanrashi)
+    dhanrashi = dhanrashi - 1000;
   }
 }
 
 
   function game(){
+    for (var i=0; i<questions1.length; i++) {
       var sawal = questions1[i];
       play(sawal.question, sawal.answer)  
     }
   }
+  
 
 function game2(){
-    for (var i=0; i<questions1.length; i++) {
-      var sawal = questions1[i];
+    for (var j=0; j<questions2.length; j++) {
+      var sawal = questions2[j];
       play(sawal.question, sawal.answer)  
     }
   }
